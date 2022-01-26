@@ -40,7 +40,7 @@ function delay(ms) { // используем промис для останов�
 class Doll {
     constructor() {
         // для просмотра с live servera нужно написать так: loader.load("models/scene.gltf", (gltf) => { 
-        loader.load("../models/scene.gltf", (gltf) => { // загружаю изображение фигурки
+        loader.load("models/scene.gltf", (gltf) => { // загружаю изображение фигурки
             scene.add( gltf.scene);
             gltf.scene.scale.set(.4, .4, .4); // устанавливаю мастштаб фигурки
             gltf.scene.position.set(0, -1, 0); // устанавливаю позицию фигурки
