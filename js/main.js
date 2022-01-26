@@ -39,7 +39,7 @@ function delay(ms) { // используем промис для останов�
 
 class Doll {
     constructor() {
-        // для просмотра с live servera нужно написать так: loader.load("models/scene.gltf", (gltf) => { 
+        // models/scene.gltf - для деплоя на gh-pages!!!
         loader.load("models/scene.gltf", (gltf) => { // загружаю изображение фигурки
             scene.add( gltf.scene);
             gltf.scene.scale.set(.4, .4, .4); // устанавливаю мастштаб фигурки
@@ -103,18 +103,13 @@ class Player{ // создаю сферу и задаю ей размер, цве
     check() {
         if(this.playerInfo.velocity > 0 && !isLookingBackward) {
             
-            text.innerText = "Win to reach site!!!"
+            text.innerText = "Ooops, try again!!!"
             gameStat = "over"
 
         }
         if(this.playerInfo.positionX < end_position + .4) {
             text.innerText = "Good job!"
             gameStat = "over"
-            setTimeout(function(){
-                window.location.href = 'www.ykycuk.com';
-                // window.location.href = "www.ykycuk.com";
-                // window.location.replace('www.ykycuk.com');
-              }, 1000);
         }
     }
 
