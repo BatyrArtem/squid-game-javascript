@@ -142,7 +142,7 @@ function startGame() {
     gsap.to(progressBar.scale, {x: 0, duration: TIME_LIMIT, ease: "none"})  //анимация для линии
     setTimeout(() => {
         if(gameStat != "over") {
-            text.innerText = "Win to reach site!!!"
+            text.innerText = "You ran out of time!"
             gameStat = "over"
         }
     }, TIME_LIMIT * 1000)
