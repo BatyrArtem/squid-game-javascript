@@ -102,7 +102,6 @@ class Player{ // создаю сферу и задаю ей размер, цве
  
     check() {
         if(this.playerInfo.velocity > 0 && !isLookingBackward) {
-            
             text.innerText = "Ooops, try again!!!"
             gameStat = "over"
 
@@ -143,7 +142,7 @@ function startGame() {
     gsap.to(progressBar.scale, {x: 0, duration: TIME_LIMIT, ease: "none"})  //анимация для линии
     setTimeout(() => {
         if(gameStat != "over") {
-            text.innerText = "Win to reach site!!!"
+            text.innerText = "You ran out of time!"
             gameStat = "over"
         }
     }, TIME_LIMIT * 1000)
