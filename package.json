@@ -7,7 +7,7 @@
   "homepage": "https://BatyrArtem.github.io/squid-game-javascript",
   "devDependencies": {},
   "scripts": { 
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
