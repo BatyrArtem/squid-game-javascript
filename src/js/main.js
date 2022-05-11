@@ -45,7 +45,8 @@ class Doll {
             // gltf.scene.scale.set(.4, .4, .4); // устанавливаю мастштаб фигурки для куклы
             gltf.scene.scale.set(2.5, 2.5, 2.5); // для моей фигурки
             // gltf.scene.position.set(0, -1, 0); // устанавливаю позицию фигурки это для куклы
-            gltf.scene.position.set(0, -2, 0); // это для моей фигурки
+            gltf.scene.position.set(0, -2, -0.5); // это для моей фигурки
+            gltf.scene.rotation.x = 0.4; // добавил к моей фигурке
             this.doll = gltf.scene;
         })
     }
